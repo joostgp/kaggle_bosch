@@ -22,7 +22,7 @@ After downloading the datasets from Kaggle, the following preprocessing steps ar
 
 ### Path:
 - [Cluster of samples by path and calculated per sample the absolute and relative difference between numeric / time difference (max - min) features and cluster mean.](feature_set_path.ipynb)
-- [Path based error rate (leave one out method) but it did not improve score](feat_randomized_loo_time_path.ipynb)
+- [Path based error rate (leave one out method) but it did not improve score](feature_set_randomized_loo_time_path.ipynb)
 - Entry / exit station
 - [Previous and next station for S29 - S37 (one-hot encoded)](feature_set_source_dest_stations.ipynb)
 
