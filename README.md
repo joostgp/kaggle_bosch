@@ -52,16 +52,16 @@ Below image of dashboards used to evaluate numeric features.
 ## Modelling scripts.
 
 ### Level one models:
-- Data set 1 (0.477 gbm): order, raw numeric, date, categorical
+- Data set 1 (0.477 gbm): order, raw numeric, date, categorical [GBM Model](model_lgbm.R)
 - Data set 2 (0.482 gbm, 0.477 xgb, 0.473 rf): order, path, raw numeric, date
 - Data set 3 (0.479 gbm, 0.473 xgb): order, path, numeric, date, refined categorical
-- Data set 4 (0.469 xgb, 0.442 rf): 
+- Data set 4 (0.469 xgb, 0.442 rf): [XGBoost model](model_xgb.R)
 - Data set 5 (0.43 xgb): has faron’s magic features, path, unsupervised nearest neighbors
     
 ### Level 2 stack models 
 Giving the weaker model a stronger weight was better:
-- 30% weighted xgboost gbtree (~0.488 CV)
-- 70% weighted Random Forest (~0.485 CV)
+- 30% weighted xgboost gbtree (~0.488 CV) [Script](model_xgb_lv2_v5.R)
+- 70% weighted Random Forest (~0.485 CV) [Script](model_rf_lv2_v3.R)
 
 Typical training dashboard:
 ![training dashboard](images/monitor.png)
